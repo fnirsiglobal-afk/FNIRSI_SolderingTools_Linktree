@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FNIRSI Official Links</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+    /* Reset & Base */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: radial-gradient(circle at top, #333333 0%, #000 60%, #129CFF 100%);
+        color: #E6E6E6;
+        text-align: center;
+        overflow-x: hidden;
+        position: relative;
+        min-height: 100vh; /* 背景至少填满屏幕高度 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px; /* 给固定footer留空间 */
+    }
+
+    /* 光晕叠加 */
+    body::before {
+        content: "";
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(18,156,255,0.15) 0%, transparent 70%);
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    /* Particle Background 全屏 */
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    /* Logo */
+    .logo img {
+        width: 150px;
+        margin-top: 30px;
+    }
+
+    /* Title & Subtitle */
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin: 20px 0 10px;
+        color: #E6E6E6;
+    }
+
+    p {
+        font-size: 16px;
+        color: #CCCCCC;
+        margin-bottom: 25px;
+    }
+
+    /* Links */
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 350px;
+        margin: 0 auto 20px;
+    }
+
+    .link-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+        background: linear-gradient(90deg, #129CFF, #33BFFF);
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 10px rgba(18, 156, 255, 0.4);
+    }
+
+    .link-btn:hover {
+        transform: scale(1.05);
+        background: linear-gradient(90deg, #129CFF, #FDD01B);
+        box-shadow: 0 5px 18px rgba(18, 156, 255, 0.6), 0 0 12px rgba(253, 208, 27, 0.6);
+    }
+
+    /* Footer 固定底部 */
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #666666;
+        padding: 10px 0;
+        background: transparent;
+        z-index: 10;
+    }
+</style>
+</head>
+<body>
+
+<!-- Particle Background -->
+<div id="particles-js"></div>
+
+<div class="logo">
+    <img src="image.png" alt="FNIRSI Logo">
+</div>
+
+<h1>FNIRSI Official Hub</h1>
+<p>Innovation in Every Detail • Technology Within Reach ⚡</p>
+
+<div class="links">
+    <a href="https://fnirsi.top/3Io7k7I/" class="link-btn"><i class="fas fa-globe"></i> Official Website</a>
+    <a href="https://fnirsi.top/3VTnjOc" class="link-btn"><i class="fas fa-store"></i> Shop Now</a>
+    <a href="https://fnirsi.top/4gopBOM" class="link-btn"><i class="fas fa-headset"></i> Support & Contact</a>
+    <a href="https://fnirsi.top/3JW86JT" class="link-btn"><i class="fab fa-youtube"></i> Watch on YouTube</a>
+    <a href="https://fnirsi.top/48jeIMj" class="link-btn"><i class="fab fa-facebook-f"></i> Join Us on Facebook</a>
+</div>
+
+<div class="footer">
+    © 2025 FNIRSI. All Rights Reserved.
+</div>
+
+<!-- Particles.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+    "particles": {
+        "number": {"value": 80, "density": {"enable": true, "value_area": 800}},
+        "color": {"value": ["#129CFF", "#555A64"]},
+        "shape": {"type": "circle"},
+        "opacity": {"value": 0.7, "random": true},
+        "size": {"value": 3.5, "random": true},
+        "line_linked": {"enable": true, "distance": 140, "color": "#129CFF", "opacity": 0.35, "width": 1},
+        "move": {"enable": true, "speed": 3, "direction": "none", "random": false, "straight": false, "out_mode": "out"}
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {"enable": true, "mode": "grab"},
+            "onclick": {"enable": true, "mode": "push"},
+            "resize": true
+        },
+        "modes": {
+            "grab": {"distance": 160, "line_linked": {"opacity": 0.6}},
+            "push": {"particles_nb": 4}
+        }
+    },
+    "retina_detect": true
+});
+</script>
+
+</body>
+</html>
